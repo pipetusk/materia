@@ -104,4 +104,3 @@ DELETE FROM actividad.cita WHERE id_cita = 3;
 -- 10.  Elimine a la doctora Dra. Laura Rivera
 
 DELETE FROM actividad.doctor WHERE id_doctor = 3;
-
