@@ -14,7 +14,7 @@ def mostrar_listado_asignaturas():
     print()
     print('Listado de Asignaturas')
     tabla_asignaturas = PrettyTable()
-    tabla_asignaturas.field_names = ['Id','Código Asignatura','Nombre Asignatura']
+    tabla_asignaturas.field_names = ['Id','Código Asignatura','Nombre Asignatura','Descripcion Asignatura']
     lista = cargar_listado_asignaturas()
     if lista != None:
         for asignatura in lista:
