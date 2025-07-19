@@ -50,8 +50,8 @@ def agregar_asignatura():
         (%s,%s,%s,%s)
     '''
     valores = (
-        codigo_asignatura.upper,
-        nombre_asignatura.title,
+        codigo_asignatura.upper(),
+        nombre_asignatura.title(),
         descripcion_asignatura,
         1)
     

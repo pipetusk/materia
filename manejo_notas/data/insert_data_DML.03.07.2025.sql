@@ -20,6 +20,6 @@ INSERT INTO opciones_menu (opcion_menu,numero_opcion,tipo_menu) VALUES
 ('Salir','0',2),
 ('Listado Docentes','1',3),
 ('Agregar Docente','2',3),
-('Editar Docente','1',3),
-('Eliminar Docente','2',3),
+('Editar Docente','3',3),
+('Eliminar Docente','4',3),
 ('Salir','0',3);
