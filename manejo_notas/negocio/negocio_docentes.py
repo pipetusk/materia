@@ -1,6 +1,7 @@
 from data.conexion import leer_datos, insertar_datos
 from prettytable import PrettyTable
 
+
 def mostrar_listado_docentes():
     print('\nListado de Docentes')
     consulta = '''
@@ -16,6 +17,8 @@ def mostrar_listado_docentes():
     else:
         print('No hay docentes registrados.')
 
+
+# CREATE
 def agregar_docente():
     rut = input('Ingrese RUT del docente: ').strip()
     nombre = input('Ingrese nombre del docente: ').strip()
@@ -31,6 +34,7 @@ def agregar_docente():
         print('Datos insuficientes.')
     mostrar_listado_docentes()
 
+# UPDATE
 def editar_docente():
     mostrar_listado_docentes()
     try:
@@ -52,6 +56,7 @@ def editar_docente():
         print('Datos insuficientes para editar.')
     mostrar_listado_docentes()
 
+# DELETE
 def eliminar_docente():
     mostrar_listado_docentes()
     try:
