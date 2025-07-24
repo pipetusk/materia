@@ -99,7 +99,7 @@ def eliminar_asignatura():
         print('ID inválido.')
         return
     consulta = '''
-        DELETE FROM asignaturas WHERE id=%s
+        UPDATE asignaturas SET habilitado=0 WHERE id=%s
     '''
     valores = (id_asignatura,)
     insertar_datos(consulta, valores)

@@ -65,7 +65,7 @@ def eliminar_docente():
         print('ID inválido.')
         return
     consulta = '''
-        DELETE FROM docentes WHERE id=%s
+        UPDATE docentes SET habilitado=0 WHERE id=%s
     '''
     valores = (id_docente,)
     insertar_datos(consulta, valores)

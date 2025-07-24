@@ -35,7 +35,6 @@ def menu_asignaturas():
             else:
                 print(invalido)
 
-
 def menu_docentes():
     while True:
         opciones_docentes = leer_datos(script_menu_docentes)
